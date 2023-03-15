@@ -1,0 +1,255 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: rgba(112, 128, 144, 0.514);
+    display: flex;
+    flex-flow: row nowrap;
+    color: whitesmoke;
+
+}
+.container{
+    height: 83vh;
+    width: 45vh;
+    margin: 10px;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.5vh
+}
+
+header{
+    height: 10%;
+    margin-top: -2;
+    position: sticky;
+}
+
+.notificationbar{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: table-row;
+    justify-content: space-between;
+    margin: 5px; padding:3px;
+    height:10%;
+}
+
+.notification1, .notification2{
+    margin:-2px
+}
+
+.searchbar {
+    height: 50%;
+    width: 93%;
+    border-radius: 15px;
+    background-color: rgba(47, 79, 79, 0.63);
+    transform: translateX(10px);
+    margin-top: 9px;
+    position: absolute;
+}
+
+span {
+    height: 2.7vh;
+    width: 2.7vh;
+    border-radius: 100%;
+    background-color: rgb(139, 134, 134);
+    transform: translate(-45px, -4px);
+
+}
+p{
+    text-align: left ;
+    margin: 5px;
+    transform: translate(35px, 4px);
+    font-family: corbel;
+    color: rgb(155, 155, 149);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+ .menu-icon {
+    height: 48px;
+    width: 48px;
+    background-color: transparent;
+    display:flex;
+/*     flex-flow:column nowrap; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+    padding-bottom: 50px;
+    margin-top: -9px;
+    
+}
+
+.iconbar:hover {
+    top: 0;
+    overflow: hidden;
+    display:none
+}
+
+.menu-icon:hover{
+    overflow: hidden;
+    height: 75vh;
+    width: 25vh;
+    background-color:rgba(47, 79, 79, 0.774);
+    transition: all 0.5s;
+    position: fixed;
+    border-radius: 7px;
+    top:1;
+}
+ 
+
+.iconbar, .iconbar::after, .iconbar::before{
+    position: absolute;
+    width: 16px;
+    height: 3px;
+    background-color: rgb(146, 142, 142);
+    border-radius: 5px;
+}
+
+.iconbar::before, .iconbar::after{
+    content: "";
+}
+
+.iconbar::before{
+    transform: translate(-8px, -5px);
+}
+
+
+.iconbar::after{
+    transform: translate(-8px, -10px);
+
+}
+
+main {
+    margin: 7px
+}
+.primary1 {
+    font-size: 1.2vh;
+    font-family: corbel;
+    color: rgb(146, 146, 146);
+   
+}
+
+.incircle {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 100%;
+    background-color: rgb(100, 7, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: corbel;
+    font-weight: bold;
+    font-size: 1.6vh;
+    margin-top: 7px;
+    
+    
+}
+
+
+.messageheader{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.messagebody {
+    display: flex;
+    flex-flow: column ;
+    margin: 7px;
+}
+.maintext {
+    padding: 1px;
+    font-family: corbel; font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -8px ;
+}
+
+.textheader{
+    font-family: corbel; font-weight: bolder;
+}
+
+.time{
+    transform: translateX(24px);
+    background-color: transparent;
+}
+
+.readtext{
+    font-family: corbel; font-weight:lighter;
+    font-size: 1.6vh; color:rgb(155, 155, 149);
+    margin: -7px;
+    padding-left: 6px;
+}
+
+.write{
+    background-color: rgb(19, 18, 18);
+    height: 5vh;
+    width: 12vh;
+    color:rgb(255, 255, 255);
+    padding: 4px;
+    float:right;
+    z-index: 1;
+    margin: -35px 15px;
+    border-radius: 8px;
+    text-align: right;
+    font-family: corbel;
+    font-weight: bolder;
+}
+
+.write:hover{
+    background-color:transparent;
+    height: 4vh;
+    width: 4vh;
+  
+}
+
+.imgg:hover{
+    height: 2vh;
+    width: 2vh;
+}
+
+.container2{
+    border: 2px solid black;
+    height: 84.5vh;
+    width: 45vh;
+    margin: 10px;
+    background-color: rgb(19, 18, 18);
+
+}
+
+footer{
+    position: sticky;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(19, 18, 18);
+    display:flex;
+    justify-content: space-around;
+    padding: 4px
+}
+
+.container2, .opening{
+
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 20vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.opening{
+    background-image:-webkit-linear-gradient(red, blue, orange, purple, green);
+    background-position: cover;
+    background-size: contain;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0.116)
+}
+
+.incircle:hover {
+    transform: rotate(750deg);
+    background-color: transparent;
+    transition: all 0.5s
+}
